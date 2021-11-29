@@ -23,7 +23,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
           application_name: docker-frontend
           environment_name: Dockerfrontend-env
-          existing_bucket_name: elasticbeanstalk:af-south-1:104599259837
+          existing_bucket_name: aws:elasticbeanstalk:af-south-1:104599259837:application/docker-frontend
           region: af-south-1
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
